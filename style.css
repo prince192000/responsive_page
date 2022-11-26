@@ -1,0 +1,197 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background{
+    background:  rgba(0, 10, 85, 0.72)url('/bg.jpg') ;
+    background-blend-mode: darken;
+    background-size: cover;
+   
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5) url(/bg.jpg);
+padding: 2px 10px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar img{
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 50px;
+    margin-left: 20px;
+    margin-top: 3px;
+
+}
+.navbar ul{
+    padding: 0 10px;
+}
+.navbar ul li {
+    display:inline-block;
+    list-style-type: none;
+    padding:0px 15px;
+}
+.navbar ul li a{
+    text-decoration:none;
+    font-size: 15px;
+  transition: 0.5s;
+    color: white;
+}
+.navbar ul li a:hover{
+    color: grey;
+}
+
+
+.btn{
+    padding: 2px 11px;
+    font-size: 12px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+}
+.main{
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ padding: 0 15%;
+}
+.content{
+    padding: 0px 30px;
+}
+.content h1{
+    font-size: 30px;
+}
+.content p{
+    font-size: 18px;
+    padding: 8px 0;
+
+}
+.content-img img{
+    width: 210px;
+height:210px;
+
+}
+.our-services{
+    background-color: aliceblue;
+    text-align: center;
+    padding: 15px 50px;
+}
+
+
+
+.box1{
+  
+    display: flex;
+justify-content: center;
+    align-items:center;
+    text-align: left;
+    padding: 20px 100px;
+}
+.left{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.left div{
+    padding: 0 10px;
+}
+.about{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 15px 50px;
+}
+.about p{
+    padding:20px 100px;
+}
+
+.contact{
+    text-align: center;
+    margin-top:10px; background-color: aliceblue;
+}
+.contact div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+.contact div input,textarea{
+    width: 30%;
+    padding:3px;
+    margin: 10px;
+    border: 2px solid grey;
+    border-radius:5px;
+
+}
+.btn-1{
+    border: 2px solid grey;
+    border-radius: 5px;
+    color: grey;
+    padding: 2px 5px;
+}
+
+footer{
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5) url(/bg.jpg);
+    padding: 10px;
+    color: white;
+    margin-top:  10px ;
+}
+
+@media only screen and (max-width: 710px){
+.navbar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: black;
+}
+.navbar ul li{
+    display:block;
+    padding: 5px 0px;
+}
+.navbar img{
+    margin-left: 0px;
+}
+nav{
+    flex-direction: column;
+  text-align: center;
+}
+.main{
+    flex-direction: column-reverse;
+    text-align: center;
+  height: 80vh;
+}
+.box1{
+    flex-direction: column-reverse;
+    text-align: center;
+margin: 0;
+padding:10px 0;
+}
+.left{
+    flex-direction: column-reverse;
+    text-align: center;
+ padding: 0;
+ margin: 0;
+}
+.about{
+    padding: 0;
+}
+.about p{
+    padding: 0 5px;
+}
+.contact div input,textarea{
+    width: 90%;
+}
+}
